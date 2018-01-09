@@ -1,0 +1,1 @@
+console.log('webpack should be working');
