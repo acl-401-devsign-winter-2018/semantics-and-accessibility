@@ -1,1 +1,1 @@
-console.log('webpack should be working');
+console.log('webpack has loaded!');
