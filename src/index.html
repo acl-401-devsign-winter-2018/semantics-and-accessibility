@@ -7,10 +7,26 @@
     <title>Accessibility</title>
 </head>
 <body>
-    <nav>
-       
-    </nav>
-    <h1>Accessibility</h1>
-    <h2>Yes it is!</h2>
+
+    <a href="#main">skip to main</a>
+
+    <header> this is a header</header>
+
+    <main id="main">
+        <nav>
+            <article>
+                <h1>Article 1</h1>
+                <figure>
+                    <img src="nothing" alt="need an image" >
+                </figure>
+            </article>
+            ${require('./second-file.html')}
+            ${require('./third-file.html')}
+        </nav>
+    </main>
+
+    <footer> 
+        <p>this is a footer</p>
+    </footer>
 </body>
 </html>
