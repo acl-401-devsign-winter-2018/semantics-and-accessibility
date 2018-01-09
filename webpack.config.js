@@ -5,7 +5,8 @@ module.exports = {
   entry: `./src/main.js`,
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
-    new HtmlPlugin({ template: `./src/about.html`, filename: `about.html` })
+    new HtmlPlugin({ template: `./src/about.html`, filename: `about.html` }),
+    new HtmlPlugin({ template: `./src/contact.html`, filename: `contact.html` })
   ],
   module: {
     rules: [
