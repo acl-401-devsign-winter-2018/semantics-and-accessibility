@@ -1,1 +1,2 @@
-console.log('Hello, Kate, I am working!');
+import './css/reset.css';
+import './css/main.css';
