@@ -1,0 +1,10 @@
+body {
+    font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+}
+/* clip is for the skip to main content, add skip class */
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* clip: finish this */
+}
