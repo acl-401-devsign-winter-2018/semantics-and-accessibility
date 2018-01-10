@@ -38,7 +38,7 @@ figcaption, small {font-size: 1rem;}
 header, article, aside, footer {padding: 1rem;}
 
 header { 
-    background: #FBC80C;
+    background: rgb(235, 200, 74);
     position: fixed;
     width: 100%;
     border-bottom: 2px solid #BD561F;
@@ -70,7 +70,7 @@ footer {
     text-align: center;
     color: #F7F0D4;
 }
-footer a {color: #AF501D;}
+footer a {color: #BD561F;}
 
 .read-more {
     background: #BD561F;
@@ -93,10 +93,17 @@ footer a {color: #AF501D;}
 
 a span{
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.excerpt {
+.excerpt,
+section p,
+figcaption {
     text-align: justify;
+}
+
+.full-article figcaption {
+    font-size: .8rem;
 }
 
 .authorName, 
@@ -109,11 +116,27 @@ time {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #BD561F;
+    margin-bottom: 1rem;
 }
 
-article {
+.contents {
     background-color: rgba(5, 39, 23, 0.2);
     border-radius: 10% / 5%;
     margin: 1rem;
-    /* border: 1px solid #BD561F; */
+}
+
+aside img {
+    border-radius: 50%;
+    width: 50%;
+    min-width: 100px;
+    display: inline-block;
+}
+
+aside {
+    text-align: center;
+}
+
+.author-specs p {
+    margin: .5rem;
 }
