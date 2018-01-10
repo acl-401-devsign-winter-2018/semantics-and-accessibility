@@ -1,0 +1,37 @@
+{
+  "ecmaFeatures": {
+    "modules": true,
+    "spread" : true,
+    "restParams" : true
+},
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-constant-condition": ["error", { "checkLoops": false }],
+      "no-console": "warn",
+      "indent": [
+        "error",
+        4,
+        { "SwitchCase": 1 }
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    },
+      "parserOptions": {
+          "sourceType": "module"
+      }
+  }
