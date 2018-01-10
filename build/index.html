@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header role="banner">
+    <h1>Things to do Next</h1>
+    <a href="#main">skip to main content</a>
+    <nav role="navigation">
+        <ul>
+            <li><a href="./index.html">Table of Contents</a></li>
+            <li><a href="./priority.html">Priority Article</a></li>
+            <li><a href="./other.html">Other Article</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main id="main" role="main">
+    <p>
+        Purpose: to test out a couple ways to semantically format an article page in html
+    </p>
+    <section>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li>
+                <a href="./priority.html">Priority Article</a>
+                <br/>&bull; author info in &lt;aside&gt; external to &lt;article&gt; 
+                <br/>&bull; &lt;aside&gt; includes "other articles" &lt;section&gt;
+                <br/>&bull; utilize &lt;blockquote&gt;
+            </li>
+            <li>
+                <a href="./other.html">Other Article</a>
+                <br/>&bull; author and publish time info in &lt;aside&gt; in &lt;header&gt; in &lt;article&gt;
+                <br/>&bull; article body enclosed in &lt;section&gt;
+                <br/>&bull; utilize &lt;code&gt;
+            </li>
+        </ul>
+    </section>
+</main>
+    <footer role="contentinfo">
+    <small>&copy; 2018 Business</small>
+</footer>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
