@@ -3,6 +3,10 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: `./src/main.js`,
+  output: {
+    filename: 'bundle.js',
+    path: `${__dirname}/build`
+  },
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
     new HtmlPlugin({ template: `./src/pho.html`, filename: `pho.html` }),
@@ -21,8 +25,19 @@ module.exports = {
             interpolate: true,
             attrs: false
           }
-        },
-      }     
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1, }
+          },
+          'postcss-loader'
+        ]
+      }
     ]
   }
 };
