@@ -1,0 +1,55 @@
+html, body {
+    line-height: 1.5;
+    height: 100%;
+    color: #364246;
+}
+
+
+
+/* Header */
+header {
+    box-sizing: border-box;
+    height: 25%;
+    padding: 1.5rem;
+    background-color: hsl(120, 73%, 85%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav {
+    text-align: right;
+}
+
+#skip-nav-link {
+    position: absolute !important;
+    left: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+header nav img {
+    height: 2rem;
+    width: 2rem;
+}
+
+header nav ul {
+    display: none;
+    position: absolute;
+    top: 1rem; right: 1rem;
+}
+
+header nav:hover img,
+header nav:focus img {
+    display: none;
+}
+
+header nav:hover ul,
+header nav:focus ul {
+    display: block
+}
+
+header h1 {
+    padding-left: 0.5rem;
+    font-size: 200%;
+}
