@@ -28,7 +28,12 @@ h1, h2, h3 {
 h1 {font-size: 1.7rem;}
 h2 {font-size: 1.5rem;}
 h3 {font-size: 1.4rem;}
-p {font-size: 1.1rem;}
+/* text align in the p is new */
+p {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
 figcaption, small {font-size: 0.9rem;}
 
 header, article, aside, footer {padding: 1rem;}
@@ -41,7 +46,7 @@ header img {
 /* ↓↓↓↓↓ border beneath articles ↓↓↓↓↓ */
 article {border-bottom: 1px solid rgb(56, 56, 56); margin: 0.5rem;}
 
-footer {
+footer > p {
     line-height: 1.2;
     text-align: center;
 }
