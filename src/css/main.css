@@ -4,6 +4,10 @@ html, body {
     color: #364246;
 }
 
+i {
+    font-style: italic; 
+}
+
 
 
 /* Header */
@@ -125,9 +129,6 @@ footer {
 .priority-article article header h2 {
     font-size: 150%;
 }
-.priority-article article header i {
-    font-style: italic; 
-}
 
 .priority-article article blockquote {
     width: 90%;
@@ -190,4 +191,62 @@ footer {
     grid-area: figcaption;
     text-align: right;
     padding-right: 0.5em;
+}
+
+
+
+
+/* Other Article */
+#main.other-article {
+    width: 90%;
+    margin: 1rem auto 3rem;
+}
+
+.other-article article {
+    width: 100%;
+    display: grid;
+}
+
+.other-article article header h2 {
+    font-size: 150%;
+}
+
+.other-article article header aside {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 0.5rem;
+    grid-template-areas:
+    "author title"
+    ".      company"
+    ".      pub-date"   
+}
+.other-article article header aside h3 {
+    grid-area: author;
+}
+.other-article article header aside .title {
+    grid-area: title;
+}
+.other-article article header aside .company {
+    grid-area: company;
+}
+.other-article article header aside time {
+    grid-area: pub-date;
+}
+
+.other-article code {
+    display: block;
+    padding-left: 1rem;
+    font-family: monospace;
+}
+.other-article code pre {
+    white-space:pre-wrap;
+}
+    
+.other-article img,
+.other-article figure {
+    width: 100%;
 }
