@@ -1,0 +1,29 @@
+body {
+  font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
+  color: #222;
+}
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.clip {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {
+  color: rgb(240, 13, 43);
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 1rem, 0, 2rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
