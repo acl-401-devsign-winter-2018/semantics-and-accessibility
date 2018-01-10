@@ -1,0 +1,26 @@
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* hide screen-reader only text.*/
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+h2{
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+p{
+    padding: .5rem;
+}
