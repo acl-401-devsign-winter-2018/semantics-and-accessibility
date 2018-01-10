@@ -1,0 +1,23 @@
+{
+  "name": "semantics-and-accessibility",
+  "version": "1.0.0",
+  "description": "Lab: Semantics and Accessibility\r ===",
+  "main": "index.js",
+  "scripts": {
+    "htmlhint": "htmlhint --config .htmlhintrc **/*.html",
+    "pretest": "npm run htmlhint",
+    "test": "echo \"No tests yet\" && exit 0",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "CK Rountree <jmail0207@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.3.1",
+    "html-loader": "^0.5.4",
+    "html-webpack-plugin": "^2.30.1",
+    "htmlhint": "^0.9.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0"
+  }
+}
