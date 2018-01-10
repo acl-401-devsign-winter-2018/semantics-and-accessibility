@@ -1,0 +1,111 @@
+body {
+    font: 100%/1.5 'Roboto Slab', Times, serif;
+    color: #283109;
+    background-color: rgb(245, 237, 208);
+}
+
+/* responsive images */
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {
+    color: #BD561F;
+    text-decoration: none;
+}
+
+h1, h2, h3, p {margin: 1rem 0 2rem;}
+
+h1, h2, h3 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.3rem;}
+p {font-size: 1.2rem;}
+figcaption, small {font-size: 1rem;}
+
+header, article, aside, footer {padding: 1rem;}
+
+header { 
+    background: #FBC80C;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #BD561F;
+}
+
+main {
+    padding-top: 70px;
+}
+
+header img {
+    width: 128px;
+    margin: 0 auto;
+}
+
+figure img {
+    border: 1px solid #283109;
+}
+
+article {border-bottom: 1px solid rgb(172, 51, 51);}
+
+section {margin-top: 4rem;}
+
+figcaption {
+    color: #666;
+    margin: 1rem 0 2rem;
+}
+
+footer {
+    background: #2B3409;
+    line-height: 1.2;
+    text-align: center;
+    color: #F7F0D4;
+}
+footer a {color: #AF501D;}
+
+.read-more {
+    background: #BD561F;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+/* https://css-tricks.com/css-content/ */
+.continue:after {
+    content:  " \2192";
+}
+
+#logo {
+    width: 30px;
+    transform: rotate(30deg);
+    display: inline-block;
+}
+
+a span{
+    font-size: 1.5rem;
+}
+
+.excerpt {
+    text-align: justify;
+}
+
+.authorName {
+    font-size: .8rem;
+    display: inline;
+}
+
+time {
+    text-align: right;
+}

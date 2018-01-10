@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-nav ol, nav ul {
+ol, ul {
 	list-style: none;
 }
 blockquote, q {
@@ -46,9 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 strong {
     font-weight: bold;
 }
+
 em {
     font-style: italic;
 }
