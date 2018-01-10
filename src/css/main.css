@@ -19,7 +19,7 @@ img {
 }
 
 a {
-    color: #BD561F;
+    color: rgb(133, 53, 10);
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ header {
     background: rgb(235, 200, 74);
     position: fixed;
     width: 100%;
-    border-bottom: 2px solid #BD561F;
+    border-bottom: 2px solid rgb(133, 53, 10);
 }
 
 main {
@@ -70,10 +70,10 @@ footer {
     text-align: center;
     color: #F7F0D4;
 }
-footer a {color: #BD561F;}
+footer a {color: rgb(133, 53, 10);}
 
 .read-more {
-    background: #BD561F;
+    background: rgb(133, 53, 10);
     color: #fff;
     padding: .5rem 1rem;
     border-radius: .5rem;
@@ -116,7 +116,7 @@ time {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #BD561F;
+    border-bottom: 2px solid rgb(133, 53, 10);
     margin-bottom: 1rem;
 }
 
@@ -139,4 +139,12 @@ aside {
 
 .author-specs p {
     margin: .5rem;
+}
+
+footer a {
+    color: rgb(223, 131, 81);
+}
+
+section a {
+    text-decoration: underline;
 }
