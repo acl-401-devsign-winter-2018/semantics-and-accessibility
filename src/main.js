@@ -1,1 +1,2 @@
-console.log('some js in the future');
+import './css/reset.css';
+import './css/main.css';
