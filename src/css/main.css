@@ -129,13 +129,8 @@ footer {
     margin: 1rem auto;
 }
 
-.priority-article article {
-    display: grid;
-    grid-gap: 2rem;
-}
-
-.priority-article article header {
-    
+.priority-article article p {
+    padding-bottom: 1rem;
 }
 .priority-article article header h2 {
     font-size: 150%;
@@ -147,6 +142,7 @@ footer {
 }
 
 .priority-article aside {
+    max-width: 380px;
     margin: 3rem auto;
     display: grid;
     grid-column-gap: 1rem;
@@ -202,6 +198,45 @@ footer {
     grid-area: figcaption;
     text-align: right;
     padding-right: 0.5em;
+}
+
+@media (min-width: 661px) {
+    div#cupcake-top-img-container {
+        height: 338.51px;
+        position: relative;
+        overflow: hidden;
+    }
+    img#cupcake-top-img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    figure#web-cupcakes {
+        float: right;
+        margin-left: 2rem;
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+@media(min-width: 1080px) {
+    .priority-article {
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .priority-article > article {
+        width: 63%;
+        max-width: 900px;
+    }
+    .priority-article > aside {
+        width: 30%;
+        height: 285px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 
