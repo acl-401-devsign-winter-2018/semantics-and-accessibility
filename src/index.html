@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Goods on Education</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rule on Education</title>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
+
 <body>
-  ${require('./header.html')}
-  ${require('./toc.html')}
+	<a href="#main" class="clip">Skip to main content</a>
+	${require('./header.html')}
+	<main id="main" id="toc" role="main">
+		<h2>Table of Contents</h2>
+		<ul>
+			<li>
+				<a href="./article1.html">THE FAILURE TRACK: These For-Profit Schools Are ‘Like a Prison’</a>
+			</li>
+			<li>
+				<a href="./article2.html">EVALUATING CHARTER SCHOOLS: When Charter Schools Are Nonprofit in Name Only</a>
+			</li>
+		</ul>
+	</main>
+	${require('./footer.html')}
 </body>
+
 </html>

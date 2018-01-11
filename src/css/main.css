@@ -1,0 +1,83 @@
+body {
+	font: 100%/1.5 Oswald, sans-serif;
+	color: #212121;
+	background: linear-gradient(to bottom, #FFF, #F5FBFF);
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0 0 20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 0 0 2rem;
+	padding: 15px 0 0 0;
+	font-size: 1.8rem;
+	color: #424242;
+} 
+
+#rule-of-ed {
+	font-family: 'Abril Fatface', cursive;
+}
+
+h2, h3, p {
+	margin: 1rem 0.5rem 2rem;
+	color: #424242;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h2 {font-size: 1.4rem;}
+
+h3 {font-size: 1.3rem;}
+
+p {font-size: 1.2rem;}
+
+figcaption, small {font-size: 0.75rem;}
+
+header {
+	background: linear-gradient(to bottom, #E3E3E3, #4A4A4A);
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid #424242;
+	max-width: 100%;
+}
+
+.nav-link {
+	color: white;
+}
+
+a {
+	color: #22529e;
+	margin: 1rem 0.5rem 2rem;
+}
+
+a:hover {
+	background-color: #ff731c;
+
+}
+
+#toc {
+	line-height: 1.5;
+	margin: 1rem 0.5rem 2rem;
+}
+
+footer {
+	border-top: 2px solid #424242;
+	border-bottom: 2px solid #424242;
+	color: white;
+	background: linear-gradient(95deg, #E3E3E3, #4A4A4A);
+    line-height: 1.5;
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
