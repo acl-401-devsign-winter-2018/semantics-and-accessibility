@@ -3,6 +3,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: `./src/main.js`,
+  output: {
+    filename: 'bundle.js',
+    path: `${__dirname}/build`
+  },
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
     new HtmlPlugin({ template: `./src/coastal-rebuilding.html`, filename: `coastal-rebuilding.html`}),
