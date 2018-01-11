@@ -5,8 +5,8 @@ module.exports = {
   entry: `./src/main.js`,
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
-    new HtmlPlugin({ template: `./src/second-file.html`, filename: `second-file.html` }),
-    new HtmlPlugin({ template: `./src/third-file.html`, filename: `third-file.html` }),
+    new HtmlPlugin({ template: `./src/a-short-history-of-the-brief-and-bumpy-life-of-the-voting-fraud-commission.html`, filename: `a-short-history-of-the-brief-and-bumpy-life-of-the-voting-fraud-commission.html` }),
+    new HtmlPlugin({ template: `./src/canadian-research-adds-to-worry-over-an-environmental-threat-the-pentagon-has-downplayed-for-decades.html`, filename: `canadian-research-adds-to-worry-over-an-environmental-threat-the-pentagon-has-downplayed-for-decades.html` }),
     new CopyWebpackPlugin([
       {from: 'src/images', to: 'images'}
     ])
