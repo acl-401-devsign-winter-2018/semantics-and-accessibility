@@ -129,8 +129,22 @@ footer {
     margin: 1rem auto;
 }
 
+#main.priority-article article:after {
+    content: "🙟🙝";
+    display: block;
+    width: 2em;
+    margin: 2rem auto 5rem;
+}
+
 .priority-article article p {
     padding-bottom: 1rem;
+}
+.priority-article article p:nth-child(1) {
+    padding-top: 1rem;
+}
+
+.priority-article article header {
+    margin: 1rem;
 }
 .priority-article article header h2 {
     font-size: 150%;
@@ -222,7 +236,7 @@ footer {
 
 @media(min-width: 1080px) {
     .priority-article {
-        max-width: 1500px;
+        max-width: 1080px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
