@@ -76,3 +76,17 @@ footer {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  .home-container {
+      display: flex;
+      max-width: 1024px;
+      margin: 0 auto;
+  }
+  .home-container {flex-wrap: wrap;}
+  .home-container article {
+      width: calc(50% - 2rem);
+      border-bottom: none;
+  }
+}
+
+
