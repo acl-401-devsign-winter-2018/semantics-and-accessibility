@@ -203,6 +203,8 @@ section a {
 
 @media (min-width:820px) {
     
+    /* table of contents */
+
     #table-contents {
         display: flex;
         justify-content: center;
