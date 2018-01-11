@@ -1,6 +1,7 @@
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
+    background-color: rgb(238, 238, 238);
 }
 
 p {
@@ -46,7 +47,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
+    padding: 5%;
+    margin: 0;
+    background-color: #fff;
 }
 
 .logo {
@@ -65,13 +68,13 @@ a {
 }
 
 main {
-    background-color: rgb(238, 238, 238);
+    
     
 }
 
 article {
     padding: 5%;
-    background-color: rgb(238, 238, 238);
+    /* background-color: rgb(238, 238, 238); */
     transition: 0.3s ease all;
 }
 
@@ -176,7 +179,7 @@ h3 {font-size: 1.777em;}
 h4 {font-size: 1.333em;}
 
 header {
-    margin: 3%;
+    padding: 3%;
 }
 
 footer {
@@ -187,16 +190,26 @@ footer {
 
 /* Desktop */
 @media only screen and (max-width: 9000px) and (min-width: 1280px) {
-header {
-    margin: 3%;
-}
+    header {
+        padding: 3%;
+    }
 
-footer {
-    padding: 3% 3% 1%;
-}
+    footer {
+        padding: 3% 3% 1%;
+    }
 
-/* article p {
-    padding: 10px 20%;
-} */
+    /* article p {
+        padding: 10px 20%;
+    } */
+
+    .index-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .index-container article {
+        width: 300px;
+    }
 
 }
