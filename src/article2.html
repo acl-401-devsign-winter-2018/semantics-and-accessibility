@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Semantics and Accessibility Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700" rel="stylesheet">
 </head>
 <body>
-        <a href="#main">Skip to main content</a>
+        <a href="#main" class="clip">Skip to main content</a>
         <header role="banner">
-                <a href="index.html"><img src="images/buglogo.png" alt="Grace Provost logo"></a>
+                <a href="index.html">
+                    <img id="logo" src="images/buglogo.png" alt="Grace Provost logo">
+                    <span>ReadNow</span>
+                </a>
         </header>
         <main id="main" role="main">
-                <article>
+                <article class="full-article">
                     <h1>Trump’s Voter Fraud Commission Is Gone, But Scrutiny Will Continue</h1>
                     <figure>
                         <img src="http://bit.ly/2D9l4gB" alt="A meeting room for the Presidential Advisory Commission on Election Integrity in Washington, D.C. (Mark Wilson/Getty Images)">
                         <figcaption>A meeting room for the Presidential Advisory Commission on Election Integrity in Washington, D.C. (Mark Wilson/Getty Images)</figcaption>
                     </figure>
-                    <p>By <a href="https://www.propublica.org/people/jessica-huseman" target="_blank" rel="author noopener noreferrer">Jessica Huseman</a>, ProPublica</p>
-                    <time datetime="2018-04-01">January 4, 2018</time>
-                    <p>The president dissolved the commission and indicated that the Department of Homeland Security will continue its mission. Experts say DHS won’t achieve the results he wants — and critics won’t back down.</p>
+                    <p class="excerpt">The president dissolved the commission and indicated that the Department of Homeland Security will continue its mission. Experts say DHS won’t achieve the results he wants — and critics won’t back down.</p>
+                    <div class="specs">
+                        <p class="authorName"><a href="https://www.propublica.org/people/jessica-huseman" target="_blank" rel="author noopener noreferrer">Jessica Huseman</a></p>
+                        <time datetime="2018-04-01">January 4, 2018</time>
+                    </div>
                     <section>
                         <p>In an unexpected executive order on Wednesday night, President Donald Trump abruptly dissolved the Presidential Advisory Commission on Election Integrity, which he’d set up after alleging with no evidence that he lost the popular vote because of millions of illegal votes. In a statement, he said the Department of Homeland Security will take up the commission’s mantle while avoiding the “endless legal battles” that bedeviled the commission in its brief existence. (For a history of the commission’s many woes and stumbles, see <a href="https://www.propublica.org/article/a-short-history-of-the-brief-and-bumpy-life-of-the-voting-fraud-commission">ProPublica’s chronology</a>.) But experts say the scrutiny and resistance that the commission faced will persist. They are skeptical DHS will achieve the results Trump claims.</p>
                         <p>“Having watched the commission go up in flames, I don’t know that DHS personnel would be eager to follow their lead,” said Justin Levitt, a professor at Loyola University School of Law and former Department of Justice civil rights official. “You don’t normally want to be the second person to jump on a live grenade.”</p>
@@ -38,13 +44,15 @@
                         <p>Other groups who filed suits relating to the voter fraud commission also say they will continue their scrutiny. For example, the Brennan Center has sought to compel the Department of Justice, DHS and the Office of Management and Budget to disclose information regarding their work with the commission. Myrna Perez, the leader of the center’s Voting Rights and Elections project, says they will continue to pursue these disclosures.</p>
                         <p>The ACLU also sued the commission, alleging that it failed to follow federal disclosure laws. Ho says these issues have not disappeared just because the commission no longer exists. “It doesn’t mean they get to shred everything now,” he said. “I still want to know what it is they’ve been concealing from the public, and I think the public deserves that.”</p>
                         <p>Experts also say that, if DHS takes on the role of investigating voter fraud, it could harm work it is doing with states to shore up cybersecurity and prevent foreign intervention. Late in the Obama Administration, election infrastructure was declared “critical,” which allowed DHS to better help states collaborate with the federal government. David Becker, executive director of the Center for Election Innovation & Research, said states initially viewed DHS intervention as federal overreach, but have now begun to productively work together. If DHS takes the lead on “a wild goose chase” to sniff out fraud, Becker argued, the necessary work of improving cybersecurity will suffer. “If DHS is being tugged in a different direction by the White House itself,” he said, “that could have a really detrimental impact.”</p>
-                        <aside>
-                            <a href="https://www.propublica.org/people/jessica-huseman" target="_blank" rel="author noopener noreferrer"><img alt="Head shot of Jessica Huseman" src="http://bit.ly/2CHPqG5"></a>
+                    </section>
+                    <aside>
+                        <a href="https://www.propublica.org/people/jessica-huseman" target="_blank" rel="author noopener noreferrer"><img alt="Head shot of Jessica Huseman" src="http://bit.ly/2CHPqG5"></a>
+                        <div class="author-specs">
                             <p><a href="https://www.propublica.org/people/jessica-huseman" target="_blank" rel="author noopener noreferrer">Jessica Huseman</a></p>
                             <p>Jessica Huseman is a reporter at ProPublica covering national politics and civil rights.</p>
                             <a href="mailto:Jessica.Huseman@propublica.org">Jessica.Huseman@propublica.org</a>
-                        </aside>
-                    </section>
+                        </div>
+                    </aside>
                 </article>
         </main>
         <footer role="contentinfo">
