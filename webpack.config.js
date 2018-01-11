@@ -5,10 +5,10 @@ module.exports = {
   entry: `./src/main.js`,
   plugins: [
     new HtmlPlugin({ template: `./src/index.html` }),
-    new HtmlPlugin({ template: `./src/a-new-hope.html`, filename: `a-new-hope.html`}),
-    new HtmlPlugin({ template: `./src/empire-strikes-back.html`, filename: `empire-strikes-back.html`}),
-    new HtmlPlugin({ template: `./src/return-of-jedi.html`, filename: `return-of-jedi.html`}),
-    new CopyWebpackPlugin([{ from: 'src/images/Star_wars_1977_us.svg.png', to: 'Star_wars_1977_us.svg.png' }])
+    new HtmlPlugin({ template: `./src/coastal-rebuilding.html`, filename: `coastal-rebuilding.html`}),
+    new HtmlPlugin({ template: `./src/dna-software.html`, filename: `dna-software.html`}),
+    new HtmlPlugin({ template: `./src/zombie-cookie.html`, filename: `zombie-cookie.html`}),
+    new CopyWebpackPlugin([{ from: 'src/images/ivan-logo.png', to: 'ivan-logo.png' }])
   ],
   module: {
     rules: [
@@ -21,7 +21,18 @@ module.exports = {
             attrs: false
           }
         }
-      }      
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1, }
+          },
+          'postcss-loader'
+        ]
+      }
     ]
   }
 };
