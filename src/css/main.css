@@ -1,0 +1,26 @@
+body {
+    background-color:bisque;
+  }
+
+img {
+    display: block;
+    width:100%;
+    height: auto;
+}
+a { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,;
+    color: #222
+}
+p {
+
+}
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    #logo {
+        height: 20%;
+        width: 20%;
+    }
