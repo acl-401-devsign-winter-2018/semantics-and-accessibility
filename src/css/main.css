@@ -153,10 +153,15 @@ section a {
     text-decoration: underline;
 }
 
+.full-article img {
+    max-width: 600px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width:530px) {
     
+    /* table of contents */
     a span {
         font-size: 2rem;
     }
@@ -178,6 +183,13 @@ section a {
         font-size: 1.3rem;
     }
 
+    /* articles */
+
+    .full-article {
+        max-width: 600px;
+        margin: auto;
+    }
+
 }
 
 @media (min-width:820px) {
@@ -190,5 +202,20 @@ section a {
     .contents {
         width: 45%;
     }
+
+     /* articles */
+
+     .full-article {
+         display: flex;
+     }
+
+    /* aside {
+        flex: 0 0 100px;
+    } */
+
+    .article-content {
+        flex: 1 0 400px;
+    }
+
 
 }
