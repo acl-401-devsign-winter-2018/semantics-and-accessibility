@@ -10,9 +10,15 @@ main, footer {
 img {
     display: block;
     width: 100%;
-    max-width: 400px;
     height: auto;
 }
+article > img {
+    max-width: 400px;
+}
+figure > img {
+    max-width: 400px;
+}
+
 /* ↓↓↓↓↓ hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ ↓↓↓↓↓ */
 .clip {
     position: absolute !important;
