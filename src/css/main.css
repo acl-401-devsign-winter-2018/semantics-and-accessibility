@@ -2,10 +2,6 @@ body {
     font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
     color: #222;
 }
-main, footer {
-    padding: 1rem;
-}
-
 /* ↓↓↓↓↓ responsive images ↓↓↓↓↓ */
 img {
     display: block;
@@ -16,13 +12,9 @@ article > img {
     max-width: 400px;
 }
 figure > img {
-    max-width: 400px;
+    max-width: 240px;
 }
 
-article {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 /* ↓↓↓↓↓ hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ ↓↓↓↓↓ */
 .clip {
     position: absolute !important;
@@ -49,10 +41,7 @@ p {
     text-justify: inter-word;
 }
 figcaption, small {font-size: 0.9rem;}
-
-/* ↓↓↓↓↓ replaced this by giving main and footer padding up above ↓↓↓↓↓ */
-/* header, article, aside, footer {padding: 1rem;} */
-
+header, article, aside, footer {padding: 1rem;}
 header { background: rgb(255, 61, 93);}
 header img {
     width: 75px;
@@ -61,6 +50,7 @@ header img {
 /* ↓↓↓↓↓ above footer ↓↓↓↓↓ */
 footer {
     border-top: 1px solid rgb(56, 56, 56);
+    margin: 1rem;
 }
 
 footer > p {
@@ -78,7 +68,6 @@ footer > p {
 .read-more:after {
     content:  " \21d2";
 }
-
 @media screen and (min-width: 700px) {
     .home-container, .article-container {
         display: flex;
@@ -92,7 +81,6 @@ footer > p {
     .article-container article {flex: auto;}
     .article-container aside {flex: 0 0 240px;}
 }
-
 @media screen and (min-width: 480px) and (max-width: 700px) {
     aside figure {
         width: 240px;
