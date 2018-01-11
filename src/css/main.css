@@ -28,7 +28,7 @@ header img{
 
 }
 
-#main, #main-article{
+main{
     position: relative;
     padding-top: 13vh;
 }
@@ -110,4 +110,19 @@ footer a{
 small{
     font-size: 70%;
     line-height: .7;
+}
+
+@media (min-width: 700px){
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;       
+    }
+
+    #main-article{
+        width: 65%;
+        display: flex;
+        margin: 0 auto;
+    }
 }
