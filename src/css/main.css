@@ -29,7 +29,7 @@ h3 {font-size: 1.999em;}
 
 h4 {font-size: 1.414em;}
 
-figcaption, small, .font_small {font-size: 0.707em;}
+figcaption, small, .font_small {font-size: 0.8em;}
 
 /* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
 .clip {
@@ -71,11 +71,6 @@ a {
 
 a:hover {
     color: rgb(11, 92, 143);
-}
-
-main {
-    
-    
 }
 
 article {
@@ -180,10 +175,6 @@ footer a:hover {
     h3 {font-size: 1.777em;}
 
     h4 {font-size: 1.333em;}
-
-    .index-container {
-
-    }
 }
 
 /* Desktop */
