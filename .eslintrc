@@ -1,37 +1,32 @@
 {
-  "ecmaFeatures": {
-    "modules": true,
-    "spread" : true,
-    "restParams" : true
-},
-    "env": {
-      "node": true,
-      "mocha": true,
-      "es6": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-      "no-constant-condition": ["error", { "checkLoops": false }],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
       "no-console": "warn",
-      "indent": [
-        "error",
-        4,
-        { "SwitchCase": 1 }
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "space-in-parens": ["error"],
+      "space-infix-ops": "error",
+      "object-curly-spacing": ["error", "always"],
+      "comma-spacing": "error",
+      "space-before-function-paren": ["error", "always"],
+      "keyword-spacing": [
+        "error", 
+        { 
+          "before": true, 
+          "after": false,
+          "overrides": {
+            "import": { "after": true }
+          } 
+        }
       ],
-      "linebreak-style": [
-        "error",
-        "unix"
-      ],
-      "quotes": [
-        "error",
-        "single"
-      ],
-      "semi": [
-        "error",
-        "always"
-      ]
-    },
-      "parserOptions": {
-          "sourceType": "module"
-      }
+      "array-bracket-spacing": "error"
   }
+}
