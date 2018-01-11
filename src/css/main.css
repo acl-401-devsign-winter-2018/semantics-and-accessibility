@@ -55,6 +55,14 @@ footer > p {
     line-height: 1.2;
     text-align: center;
 }
-/* .read-more {
-
-} */
+.read-more {
+    background:  rgb(255, 61, 93);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.read-more:after {
+    content:  " \21d2";
+}
