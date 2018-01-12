@@ -1,26 +1,80 @@
 body {
-    background-color:bisque;
-  }
+    text-align: center;
+    background-color: #F4F4F9;
+    margin: 3rem;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font: bold 1.5rem; 
+    background-color: rgba(61, 19, 1, 0.192);
+    border: 3px solid rgba(61, 19, 1, 1);
+
+}
 
 img {
     display: block;
-    width:100%;
-    height: auto;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    border: rgb(8, 8, 8);
 }
-a { 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,;
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, ;
     color: #222
 }
-p {
 
-}
+p {}
+
 .clip {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
-    }
+}
 
-    #logo {
-        height: 20%;
-        width: 20%;
+#logo {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%
+}
+
+h1, h2, h3,
+p {
+    margin: 1rem 0 2rem;
+}
+
+h1, h2,
+{
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 10px;
+}
+
+figcaption, small {
+    font-size: .75rem;
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    aside figure {
+        width: 240px;
+        float: left;
+        margin: 0 1rem .5rem 0;
     }
+}
+footer {
+    background-color:rgba(61, 19, 1, 0.192);
+}
