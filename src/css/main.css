@@ -63,4 +63,63 @@ p{
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-style: bold;
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+h3 {
+    justify-content: space-between;
+    padding: .5rem;
+    font-style:italic;
+}
+p {
+    padding: .5rem;
+    line-height: 1.5rem;
+    text-indent: 2rem;
+}
+#derek, #abraham {
+    border-radius: 50%;
+    width: 50%;
+}
+@media screen and (min-width: 900px){
+    nav {
+        display: flex;
+    }
+    #back-home {
+        text-decoration: none;
+        color: white;
+    }
+    article {
+        padding: 1em;
+        border: 0px 1px 0px 1px solid lightgrey;
+    }
+    h2 {
+        border-bottom: 1px solid black;
+    }
+    main {
+        display: flex;
+    }
+    #top-article {
+        flex: auto;
+    }
+    img {
+        display: block; 
+    }   
+    .float-pic{
+        float:left;
+        margin-right: 1rem;
+    }
+    aside {
+    flex: 0 0 300px;
+    border: 1px solid black;
+    background: #E5E1D5;
+}
 }
