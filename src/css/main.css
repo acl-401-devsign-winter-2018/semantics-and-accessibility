@@ -2,7 +2,25 @@ body {
     font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
     color: #222;
 }
+
+/* ↓↓↓↓↓ hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ ↓↓↓↓↓ */
+.clip {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {text-decoration: none;}
+a:visited {text-decoration: none; color: blue;}
+a:hover {text-decoration: none; color: purple;}
+
 /* ↓↓↓↓↓ responsive images ↓↓↓↓↓ */
+header, article, aside, footer {padding: 1rem;}
+header { background: rgb(255, 61, 93);}
+header img {
+    width: 75px;
+    margin: 0 auto;
+}
 img {
     display: block;
     width: 100%;
@@ -11,56 +29,34 @@ img {
 article > img {
     max-width: 400px;
 }
-figure > img {
-    max-width: 240px;
-}
 
-/* ↓↓↓↓↓ hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ ↓↓↓↓↓ */
-.clip {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-}
-a {text-decoration: none;}
-a:visited {text-decoration: none; color: blue;}
-a:hover {text-decoration: none; color: purple;}
-/* ↓↓↓↓↓ Bold h1-h3 ↓↓↓↓↓ */
+/* ↓↓↓↓↓ h1-h3 sizes ↓↓↓↓↓ */
+h1 {font-size: 1.7rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.4rem;}
 h1, h2, h3, p {margin: 1rem 0 1.3rem;}
 h1, h2, h3 {
     font-weight: bold;
     line-height: 1.2;
 }
-/* ↓↓↓↓↓ h1-h3 sizes ↓↓↓↓↓ */
-h1 {font-size: 1.7rem;}
-h2 {font-size: 1.5rem;}
-h3 {font-size: 1.4rem;}
-/* text align in the p is new */
+
 p {
     font-size: 1.1rem;
     text-align: justify;
     text-justify: inter-word;
 }
+
+figure > img {
+    max-width: 240px;
+}
+
+
 figcaption, small {font-size: 0.9rem;}
 figcaption {
     color: #666;
     margin: 1rem 0 2rem;
 }
-header, article, aside, footer {padding: 1rem;}
-header { background: rgb(255, 61, 93);}
-header img {
-    width: 75px;
-    margin: 0 auto;
-}
-/* ↓↓↓↓↓ above footer ↓↓↓↓↓ */
-footer {
-    border-top: 1px solid rgb(56, 56, 56);
-    margin: 1rem;
-}
 
-footer > p {
-    line-height: 1.2;
-    text-align: center;
-}
 .read-more {
     color: #fff;
     padding: .5rem 1rem;
@@ -70,6 +66,16 @@ footer > p {
 }
 .read-more:after {
     content:  " \21d2";
+}
+
+footer {
+    border-top: 1px solid rgb(56, 56, 56);
+    margin: 1rem;
+}
+                                        
+footer > p {
+    line-height: 1.2;
+    text-align: center;
 }
 @media screen and (min-width: 700px) {
     .home-container, .article-container {
