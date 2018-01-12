@@ -74,7 +74,6 @@ footer {
     text-align: center;
     color: #F7F0D4;
 }
-footer a {color: rgb(133, 53, 10);}
 
 .read-more {
     background: rgb(133, 53, 10);
@@ -128,6 +127,7 @@ time {
     background-color: rgba(5, 39, 23, 0.2);
     border-radius: 10% / 5%;
     margin: 1rem;
+    margin-top: 2rem;
 }
 
 aside img {
@@ -151,4 +151,103 @@ footer a {
 
 section a {
     text-decoration: underline;
+}
+
+.full-article img {
+    max-width: 600px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:530px) {
+    
+    /* table of contents */
+    a span {
+        font-size: 2rem;
+    }
+
+    .contents {
+        margin: 2rem auto;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .authorName, 
+    time {
+        font-size: 1.2rem;
+    }
+
+    .excerpt {
+        font-size: 1.3rem;
+    }
+
+    /* articles */
+
+    .full-article {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .full-article aside {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside a img {
+        min-width: 150px;
+    }
+
+}
+
+@media (min-width:820px) {
+    
+    /* table of contents */
+
+    #table-contents {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contents {
+        width: 45%;
+    }
+    
+}
+
+@media (min-width:1100px) {
+
+     /* articles */
+
+     .full-article {
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        width: 80%;
+        margin-top: 20px;
+     }
+
+     .article-content img {
+         max-width: 800px;
+         margin: auto;
+     }
+
+     .article-content figcaption {
+         font-size: 1rem;
+         max-width: 800px;
+         margin: 1rem auto;
+     }
+
+     .full-article aside {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .no-image-author-specs {
+        min-width: 170px;
+    }
+
+
 }
