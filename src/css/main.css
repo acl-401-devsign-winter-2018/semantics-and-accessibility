@@ -2,19 +2,19 @@ body {
   font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
   color: #222;
 }
-/* img {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
+
 
 .clip {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.news {
+  color: #DB995A;
+}
+
 a {
-  color: rgb(240, 13, 43);
+  color: #780116;
   text-decoration: none;
 }
 
@@ -26,4 +26,67 @@ h1, h2, h3 {
   line-height: 1.2;
   font-weight: bold;
 }
+
+h2 {margin-bottom: .5rem}
+
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.3rem;}
+p {font-size: 1.2rem;}
+
+header, article, aside, footer {padding: 1rem;}
+
+header { 
+  background: #20222B;
+  text-align: center;
+}
+
+article {
+  border-bottom: 1px solid #ddd;
+}
+img {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+}
+
+
+figcaption {
+  color: #FE5F55;
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+
+.read-more {
+  background: #FE5F55;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+/* https://css-tricks.com/css-content/ */
+.read-more:after {
+  content:  " \00bb";
+}
+
+footer {
+  background: #eee;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .home-container {
+      display: flex;
+      max-width: 1024px;
+      margin: 0 auto;
+  }
+  .home-container {flex-wrap: wrap;}
+  .home-container article {
+      width: calc(50% - 2rem);
+      border-bottom: none;
+  }
+}
+
 
