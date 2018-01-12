@@ -88,12 +88,16 @@ header {
 #a {
     margin-left: 20%;
     color: white;
-    font-size: 4rem
+    font-size: 4rem;
+    animation-name: example;
+    animation-duration: 3s;
 }
 #t {
     margin: -45% 54%;
     color: white;
-    font-size: 4rem
+    font-size: 4rem;
+    animation-name: example;
+    animation-duration: 2s;
 }
 nav li {
     width: 3rem;
@@ -110,21 +114,19 @@ nav li a:hover {
     font-size: 2.6rem;
     color:#FF1300;
     transform: scaleX(1);
-
 }
 
 /* index!!!!! */
-section{
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+.news-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: column;
     align-items: center;
-}
-
-main {
-    width: 70%;
-    margin: 0 auto;
 }
 h2 a {
     color: #FF1300;
@@ -135,12 +137,80 @@ h2 a:hover {
     font-size: 1.6rem;
     transform: scaleX(1);
 }
-
-article img {
+.article img {
     width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
-article p{ 
+.article p{ 
     line-height: 1.4;
 }
 
+/* about */
+.about-container {
+    width: 90%;
+    margin: 4rem auto;
+}
 
+/* contact */
+.contact-container {
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+}
+.contact {
+    text-align: center;
+}
+.social-media {
+    margin-left: 0px;
+    padding: 0px;
+}
+
+@media only screen  and (min-width : 900px) {
+    nav li {
+        display: inline;
+        margin-right: 1.2rem;
+    }
+    nav li a {
+        color: white;
+        font-size: 3.5rem;
+    }
+    nav li a:hover {
+        font-size: 4rem;
+    }
+
+    .main {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: row;
+    }
+    .news-container {
+        display:flex;
+        flex-wrap: wrap;
+        align-content: row;
+    }
+    .article {
+        width: 280px;
+        height: 500px;
+        justify-content: space-between;
+    }
+    .summary {
+        width: 24%;
+        margin: 2rem auto 8rem auto;
+        position: sticky;
+        text-align: justify;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+    .summary p{ font-size: 1rem;}
+}
+
+@keyframes example {
+    20%   {
+        margin-left:100px;
+        font-size:10rem;
+        color: gray;
+    }
+}
