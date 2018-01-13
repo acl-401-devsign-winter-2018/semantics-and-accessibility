@@ -58,6 +58,7 @@ figcaption {
 }
 
 .read-more {
+    background: rgb(190, 190, 190);
     padding: .5rem 1rem;
     border-radius: .5rem;
     display: inline-block;
