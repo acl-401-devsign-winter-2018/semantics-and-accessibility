@@ -13,7 +13,7 @@ body {
   color: #DB995A;
 }
 
-a {
+h2 {
   color: #780116;
   text-decoration: none;
 }
@@ -77,16 +77,27 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  .home-container {
-      display: flex;
+  .full-page {
+      /* display: flex; */
       max-width: 1024px;
-      margin: 0 auto;
+      margin: 0 2rem;
   }
-  .home-container {flex-wrap: wrap;}
+  .full-page {
+    margin: 1rem;
+  }
+}
+ /* /*  .home-container {flex-wrap: wrap;}
   .home-container article {
       width: calc(50% - 2rem);
       border-bottom: none;
   }
 }
+/*  */
 
-
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  aside {
+      width: 240px;
+      float: left;
+      margin: 0 1rem .5rem 0;
+  }
+}
